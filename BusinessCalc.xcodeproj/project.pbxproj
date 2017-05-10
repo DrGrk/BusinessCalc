@@ -13,6 +13,9 @@
 		761FF64C1EBACCA000B04DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761FF64B1EBACCA000B04DB3 /* Assets.xcassets */; };
 		761FF64F1EBACCA000B04DB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761FF64D1EBACCA000B04DB3 /* LaunchScreen.storyboard */; };
 		761FF65A1EBACCA000B04DB3 /* BusinessCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FF6591EBACCA000B04DB3 /* BusinessCalcTests.swift */; };
+		761FF6651EBACEAD00B04DB3 /* CustomCellMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FF6641EBACEAC00B04DB3 /* CustomCellMainVC.swift */; };
+		76EF56321EC27894002E8662 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76EF56301EC27894002E8662 /* Model.xcdatamodeld */; };
+		76EF56341EC278FC002E8662 /* ProjectDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF56331EC278FC002E8662 /* ProjectDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		761FF6551EBACCA000B04DB3 /* BusinessCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		761FF6591EBACCA000B04DB3 /* BusinessCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCalcTests.swift; sourceTree = "<group>"; };
 		761FF65B1EBACCA000B04DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761FF6641EBACEAC00B04DB3 /* CustomCellMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellMainVC.swift; sourceTree = "<group>"; };
+		76EF56311EC27894002E8662 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		76EF56331EC278FC002E8662 /* ProjectDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 		761FF6381EBACCA000B04DB3 = {
 			isa = PBXGroup;
 			children = (
+				761FF6641EBACEAC00B04DB3 /* CustomCellMainVC.swift */,
+				76EF56331EC278FC002E8662 /* ProjectDetailVC.swift */,
 				761FF6431EBACCA000B04DB3 /* BusinessCalc */,
 				761FF6581EBACCA000B04DB3 /* BusinessCalcTests */,
 				761FF6421EBACCA000B04DB3 /* Products */,
@@ -83,6 +91,7 @@
 				761FF64B1EBACCA000B04DB3 /* Assets.xcassets */,
 				761FF64D1EBACCA000B04DB3 /* LaunchScreen.storyboard */,
 				761FF6501EBACCA000B04DB3 /* Info.plist */,
+				76EF56301EC27894002E8662 /* Model.xcdatamodeld */,
 			);
 			path = BusinessCalc;
 			sourceTree = "<group>";
@@ -146,6 +155,7 @@
 				TargetAttributes = {
 					761FF6401EBACCA000B04DB3 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 59NTDPFXJ3;
 						ProvisioningStyle = Automatic;
 					};
 					761FF6541EBACCA000B04DB3 = {
@@ -200,7 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				761FF6471EBACCA000B04DB3 /* ViewController.swift in Sources */,
+				761FF6651EBACEAD00B04DB3 /* CustomCellMainVC.swift in Sources */,
 				761FF6451EBACCA000B04DB3 /* AppDelegate.swift in Sources */,
+				76EF56321EC27894002E8662 /* Model.xcdatamodeld in Sources */,
+				76EF56341EC278FC002E8662 /* ProjectDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59NTDPFXJ3;
 				INFOPLIST_FILE = BusinessCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidguichon.BusinessCalc;
@@ -351,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59NTDPFXJ3;
 				INFOPLIST_FILE = BusinessCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidguichon.BusinessCalc;
@@ -406,6 +421,7 @@
 				761FF6601EBACCA000B04DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		761FF6611EBACCA000B04DB3 /* Build configuration list for PBXNativeTarget "BusinessCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -414,8 +430,23 @@
 				761FF6631EBACCA000B04DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		76EF56301EC27894002E8662 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				76EF56311EC27894002E8662 /* Model.xcdatamodel */,
+			);
+			currentVersion = 76EF56311EC27894002E8662 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 761FF6391EBACCA000B04DB3 /* Project object */;
 }
